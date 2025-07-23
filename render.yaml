@@ -3,6 +3,5 @@ services:
     name: linkguard
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
-    pythonVersion: 3.10
-    region: oregon
+    startCommand: gunicorn main:app
+
