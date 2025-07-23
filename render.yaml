@@ -1,17 +1,8 @@
 services:
   - type: web
-    name: telegram-link-bot
+    name: linkguard
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python3 main.py
-    envVars:
-      - key: PYTHONPATH
-        value: /opt/render/project/.venv/lib/python3.13/site-packages
-      - key: BOT_TOKEN
-        value: 7988998113:AAGDem0y1-vpuh_y1OMSwjcKENlaMtMlFpM
-      - key: WEBHOOK_SECRET
-        value: linkguard2025
-      - key: BOT_USERNAME
-        value: Link_Guard0_bot
-pythonVersion: 3.13.4
-
+    startCommand: python main.py
+    pythonVersion: 3.10
+    region: oregon
