@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-link-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7988998113:AAGDem0y1-vpuh_y1OMSwjcKENlaMtMlFpM
+      - key: WEBHOOK_SECRET
+        value: linkguard2025
+      - key: BOT_USERNAME
+        value: Link_Guard0_bot
