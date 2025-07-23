@@ -3,7 +3,7 @@ services:
     name: telegram-link-bot
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
+    startCommand: python3 main.py
     envVars:
       - key: BOT_TOKEN
         value: 7988998113:AAGDem0y1-vpuh_y1OMSwjcKENlaMtMlFpM
@@ -11,3 +11,4 @@ services:
         value: linkguard2025
       - key: BOT_USERNAME
         value: Link_Guard0_bot
+pythonVersion: 3.11
